@@ -39,8 +39,11 @@ function prompts(){
   }
   if (confirm("Would you like symbols?")) {
     passArr = passArr.concat(symbol);
-  }
+  } 
+  else  {
+   (alert("If no option is selected no password will be given. Please try again."));}
   return true;
+  
 }
 generateBtn.addEventListener("click", writePassword);
 
